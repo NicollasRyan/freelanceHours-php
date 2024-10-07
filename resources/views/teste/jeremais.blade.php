@@ -13,6 +13,10 @@
             <li><?= $key ?></li>
         <?php endforeach; ?>
     
+        @auth
+            <span>Você está autenticado!</span>
+        @endauth
+
         @foreach (range(1, 20) as $key)
             <li>{{ $key }}</li>
         @endforeach
